@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as py
+import os
 
 seznam_h = pd.read_csv("123456789.csv")
 seznam_s = pd.read_csv("Standart.csv")
@@ -54,9 +55,15 @@ seznam_s_4=uprava2[uprava2["porovnani"]==1] #vypis cele tabulky dle ==0, pridani
 
 seznam_s_3_bez_duplicit = seznam_s_3.drop_duplicates(subset='123456789_Radek')
 
-with pd.ExcelWriter(r'C:\Users\Tom\Documents\Tutorials\Handlatool\Multisheet.xlsx')as writer:
+
+#with pd.ExcelWriter(r'C:\Users\Tom\Documents\Tutorials\Handlatool\Multisheet.xlsx')as writer:
+with pd.ExcelWriter(r'C:/Users/kot5brn/Documents\Multisheet.xlsx')as writer:
     seznam_s_2.to_excel(writer,sheet_name='Standart')
     seznam_s_4.to_excel(writer,sheet_name='Nestandart')
     seznam_s_3_bez_duplicit.to_excel(writer,sheet_name='Atyp')
+os.system('start "excel" C:/Users/kot5brn/Documents\Multisheet.xlsx"')
+
+    
+
 
 print("Done")
