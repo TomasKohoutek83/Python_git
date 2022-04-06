@@ -2,7 +2,11 @@ import pandas as pd
 import numpy as py
 import os
 
-seznam_h = pd.read_csv("123456789.csv")
+
+header_names=['Radek','Ident','Popis','Pocet','Zbytek']  # Pridany nazvy sloupcu
+seznam_h=pd.read_csv("R920080633.csv", header=None,skiprows=1,names=header_names) # Precteni a pridani nazvu sloupcu
+
+#seznam_h = pd.read_csv("123456789.csv")
 #seznam_s = pd.read_csv("Standart.csv")
 #seznam_n = pd.read_csv("Nestandart.csv")
 
