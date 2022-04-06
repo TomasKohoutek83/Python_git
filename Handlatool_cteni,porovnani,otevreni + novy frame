@@ -6,6 +6,7 @@ seznam_h = pd.read_csv("123456789.csv")
 #seznam_s = pd.read_csv("Standart.csv")
 #seznam_n = pd.read_csv("Nestandart.csv")
 
+#pridani dataframe pro velikosti agregatu (dle sekvencniho cisla)
 standart_1= pd.DataFrame(
     {
         'Radek':[50,49,48,47,46,45,44],
@@ -84,7 +85,7 @@ with pd.ExcelWriter(r'C:/Users/kot5brn/Documents\Multisheet.xlsx')as writer:
     seznam_s_2.to_excel(writer,sheet_name='Standart')
     seznam_s_4.to_excel(writer,sheet_name='Nestandart')
     seznam_s_3_bez_duplicit.to_excel(writer,sheet_name='Atyp')
-os.system('start "excel" C:/Users/kot5brn/Documents\Multisheet.xlsx"')
+os.system('start "excel" C:/Users/kot5brn/Documents\Multisheet.xlsx"')  #doplneni funkce automatoickeho otevreni exelu po vytvoreni excelu
 
     
 
