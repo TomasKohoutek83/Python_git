@@ -28,13 +28,13 @@ nestandart_1= pd.DataFrame(
     }
 )
 
+seznam_h_bez_duplicit = seznam_h.drop_duplicates(subset='Popis')    # odstraneni duplicit ze sloupce popis, z duvodu nahrani pod sestav
 
-
-seznam_h = seznam_h.add_prefix("123456789_")
+seznam_h_bez_duplicit= seznam_h.add_prefix("123456789_")
 standart_1 = standart_1.add_prefix("Standart_")
 nestandart_1 = nestandart_1.add_prefix("Nestandart_")
 
-vedle_sebe_s = pd.merge(seznam_h,standart_1,how='outer',left_on='123456789_Ident',right_on='Standart_Ident')
+vedle_sebe_s = pd.merge(seznam_h_bez_duplicit,standart_1,how='outer',left_on='123456789_Ident',right_on='Standart_Ident')
 
 def srovnani_s(df):
     if df['123456789_Ident'] == df['Standart_Ident']:
