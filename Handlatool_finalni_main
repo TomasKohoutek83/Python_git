@@ -103,7 +103,7 @@ class LoginWindow(qtw.QWidget,Ui_Form):
 
             seznam_s_3_bez_duplicit = seznam_s_3.drop_duplicates(subset='Radek')
 
-            with pd.ExcelWriter(r'C:\Users\Tom\Documents\Tutorials\Handlatool\Multisheet.xlsx')as writer:
+            with pd.ExcelWriter(r'F:\Programy\Python_data\Handlatool\Finalni_verze\Multisheet.xlsx')as writer:
 
                 seznam_s_2.to_excel(writer,sheet_name='Standart')
                 seznam_s_4.to_excel(writer,sheet_name='Nestandart')
@@ -112,12 +112,12 @@ class LoginWindow(qtw.QWidget,Ui_Form):
         def vytvor_seznam(self):
             vypis_vyrobni = self.lineEdit_2.text()
             vypis_str =str(self.lineEdit_2.text())
-            os.rename('C:/Users/Tom/Documents/Tutorials/Handlatool/Multisheet.xlsx',f'C:/Users/Tom/Documents/Tutorials/Handlatool/{vypis_str}.xlsx')
+            os.rename('F:\Programy\Python_data\Handlatool\Finalni_verze\Multisheet.xlsx',f'F:\Programy\Python_data\Handlatool\Finalni_verze\{vypis_str}.xlsx')
             
         def open_exel(self):
             vypis_vyrobni = self.lineEdit_2.text()
             vypis_str =str(self.lineEdit_2.text())
-            os.system(f'start "excel" C:/Users/Tom/Documents/Tutorials/Handlatool/{vypis_str}.xlsx"')  #doplneni funkce automatoickeho otevreni exelu po vytvoreni excelu
+            os.system(f'start "excel" F:\Programy\Python_data\Handlatool\Finalni_verze\{vypis_str}.xlsx"')  #doplneni funkce automatoickeho otevreni exelu po vytvoreni excelu
 
 
 if __name__ =='__main__':
@@ -126,7 +126,7 @@ if __name__ =='__main__':
     widget=LoginWindow()
     widget.show()
     app.exec_()
-    
+
 # if __name__ == "__main__":
 #     import sys
 #     app = QtWidgets.QApplication(sys.argv)
