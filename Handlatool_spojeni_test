@@ -51,8 +51,12 @@ class LoginWindow(qtw.QWidget,Ui_Form):
 
         def uloz(self):
             otevreny=self.lineEdit.text()
+            otevreny_2 = int(otevreny)
             #print("Button pressed")    kontrola funkcnosti
-            self.label_4.setText(otevreny)
+            if otevreny_2 <60:
+                self.label_4.setText(otevreny)
+            else:
+                 self.label_4.setText("NEPLATNY ZAPIS")
             #vypis_vyrobni = self.lineEdit_2.text()
             
         
