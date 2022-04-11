@@ -120,9 +120,11 @@ class LoginWindow(qtw.QWidget,Ui_Form):
                 #os.rename(f'C:/Users/Tom\Documents/Tutorials/Handlatool/Multisheet.xlsx','C:/Users/Tom/Documents/Tutorials/Handlatool/{vypis_vyrobni}.xlsx')
         def vytvor_seznam(self):
             vypis_vyrobni = self.lineEdit_2.text()
+            vypis_str =str(self.lineEdit_2.text())
             
-            os.rename(r'Multisheet.xlsx',r'{vypis_vyrobni}.xlsx')
-            os.system('start "excel" F:\Programy\Python_data\Handlatool\testovani\Multisheet.xlsx"')  #doplneni funkce automatoickeho otevreni exelu po vytvoreni excelu
+            os.rename('C:/Users/kot5brn/Documents/Python - kody/Handlatool/Multisheet.xlsx',f'C:/Users/kot5brn/Documents/Python - kody/Handlatool/{vypis_str}.xlsx')
+            os.system(f'start "excel" C:/Users/kot5brn/Documents/Python - kody/Handlatool/{vypis_str}.xlsx"')  #doplneni funkce automatoickeho otevreni exelu po vytvoreni excelu
+
 
 
         
