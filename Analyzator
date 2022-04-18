@@ -1,0 +1,110 @@
+
+
+krtecek = '''
+Hluboko, ale opravdu hluboko pod zemí přespával malý a velice roztomilý krteček,
+který se každé 55 66 ráno vyhrabával na zem, kde také zažíval nejrůznější dobrodružství.
+Na jedné louce, kde kvetlo a překrásně vonělo luční kvítí, se začal tvořit kopeček hlíny, 
+ze kterého najednou vykoukly tři vlásky a poté i malé zaoblené tělíčko, které patřilo krtečkovi.
+Krteček se protáhl a zívl. Sotva ale vylezl zpod země, najednou ho něco objalo kolem jeho bříška a přeneslo ho to přes dřevěný plot. 
+Krteček byl vysoko ve vzduchu, avšak najednou se ocitl ve vodě, kam ho to stvoření zahodilo. 
+Ptáte se, co se stalo? Krtečka právě chytil slon svým dlouhým chobotem, 
+přenesl ho přes plot a pak ho hodil do vody, která byla velmi studená.
+Dříve, než krteček stihl z vody vylézt ven, k rybníku přikráčel pelikán a nabral krtečka do svého velikého zobáku.
+Krteček se snažil pelikánovi otevřít zobák zevnitř, avšak to se mu příliš nedařilo. 
+Pelikán se zarazil, protože cítil, že se mu v zobáku něco začalo hýbat, což bylo nezvyklé. 
+Když pelikán zobák otevřel, krteček rychle vyskočil ven a značně znepokojený utíkal, co mu nohy stačily.
+'''
+
+
+
+
+
+seznam_uzivatelu = {'bob':'123', 'ann':'pass123', 'mike':'password123', 'liz':'pass123'}
+cara = '-'*45
+cara_ukonceni= '-'*60
+
+
+pocet_slov = []
+zacina_velkym_pismenem = []
+velka_pismena= []
+mala_pismena =[]
+cislice = []
+text_bez_vel_pismen =[]
+mnozstvi_slov= {}
+
+   
+for slovo in krtecek.split():
+    ciste_slovo = slovo.strip(".,:!?")
+    pocet_slov.append(ciste_slovo)
+
+for slovo in pocet_slov:
+    if slovo.istitle():
+        zacina_velkym_pismenem.append(slovo)
+
+
+for slovo in pocet_slov:
+    if slovo.isupper():
+        velka_pismena.append(slovo)  
+    elif slovo.islower():
+        mala_pismena.append(slovo)
+
+for slovo in pocet_slov:
+    if slovo.isdigit():
+        cislice.append(slovo)
+
+cislice =list(map(int,cislice))
+soucet = sum(cislice)
+
+   
+for slovo in pocet_slov:
+    text_bez_vel_pismen.append(slovo.lower())
+
+for slovo in text_bez_vel_pismen:
+    if slovo not in mnozstvi_slov:
+            mnozstvi_slov[slovo] = 1
+    else:
+        mnozstvi_slov[slovo] = mnozstvi_slov[slovo] +1
+print(mnozstvi_slov.values())
+
+
+
+
+
+#print(analyza(krtecek))
+
+# uzivatel = input("Zadej jmeno uzivatale: ")
+# heslo = input("Zadej heslo: ")
+
+
+# while uzivatel in seznam_uzivatelu and seznam_uzivatelu.get(uzivatel) == heslo:
+
+#     print(cara, f"Vitej v textovem analyzatoru, {uzivatel}","Mame zde 3 texty na analyzu dle autoru", cara,sep='\n') 
+#     break
+          
+# else:
+#     print(cara_ukonceni,'****Chybne zadany uzivatel nebo heslo, ukoncuji program ****',cara_ukonceni,sep='\n')
+#     exit()
+
+
+# print("Autori na vyber:", "1: Zdenek Miler","2: Andrzej Sapkowski", "3: Jiri Kulhanek",cara, sep='\n' )
+# vyber = input("Vyber autora pro analyzu jeho knizni ukazky (zadej cislo) : ")
+
+# if vyber == 1:
+#     print(analyza(krtecek))
+# elif vyber == 2:
+#     print(analyza(sapkowski))
+# else:
+#     print(analyza(kulhanek))
+
+# print(f'''{cara}
+# Text obsahuje celkem {len(pocet_slov)} slov.
+# Text obsahuje celkem {len(zacina_velkym_pismenem)} slov zacinajici velkym pismenem.
+# Text obsahuje celkem {len(velka_pismena)} slov psanych velkymi pismeny.
+# Text obsahuje celkem {len(mala_pismena)} slov psanych malymi pismeny.
+# Text obsahuje celkem {len(cislice)} cislic v textu.
+# Soucet vsech cislic v textu je {(soucet)}.
+# {cara}
+# Delka|  Zobrazeni  | Pocet
+# {cara}''')
+# print(f'''
+# 1| {len.
