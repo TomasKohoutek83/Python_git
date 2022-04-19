@@ -1,9 +1,7 @@
-import pprint
-
 
 krtecek = '''
 Hluboko, ale opravdu hluboko pod zemí přespával malý a velice roztomilý krteček,
-který se každé 55 66 ráno vyhrabával na zem, kde také zažíval nejrůznější dobrodružství.
+který se každé ráno vyhrabával na zem, kde také zažíval nejrůznější dobrodružství.
 Na jedné louce, kde kvetlo a překrásně vonělo luční kvítí, se začal tvořit kopeček hlíny, 
 ze kterého najednou vykoukly tři vlásky a poté i malé zaoblené tělíčko, které patřilo krtečkovi.
 Krteček se protáhl a zívl. Sotva ale vylezl zpod země, najednou ho něco objalo kolem jeho bříška a přeneslo ho to přes dřevěný plot. 
@@ -15,116 +13,147 @@ Krteček se snažil pelikánovi otevřít zobák zevnitř, avšak to se mu pří
 Pelikán se zarazil, protože cítil, že se mu v zobáku něco začalo hýbat, což bylo nezvyklé. 
 Když pelikán zobák otevřel, krteček rychle vyskočil ven a značně znepokojený utíkal, co mu nohy stačily.
 '''
-
+sapkowski = '''
+Zátoka se ježila lodními stěžni se skasanými plachtami, bílými i barevnými. 
+Větší lodě kotvily na vlnolamem a hrází chráněné rejdě. Ve vnitřním přístavu byla u dřevěných mol připoutána menší i úplně malá plavidla. 
+Na plážích skoro každé volné místo zabíraly čluny. Nebo jejich zbytky.
+Na konci mysu atakovaném zpěněnými vlnami příboje se tyčil maják z bílých a červených cihel, obnovená stavba z elfských časů. 
+Zaklínač pobídl patou svoji hnědou klisnu. 
+Klepna zvedla hlavu a roztáhla nozdry, jako by si i ona vychutnávala větrem přinášenou vůni moře, a poklusem vyrazila přes písečné přesypy k blízkému městu.
+Město Kerack, metropole stejnojmenného království, se rozkládalo na obou protilehlých březích ústí řeky Adalatte a skládalo se ze tří oddělených, nápadně se lišících okrsků.
+Na levém břehu Adalatte se vedle přístavu a doků rozkládal průmyslový a obchodní komplex zahrnující loděnice a dílny, faktorie, překladiště a sklady, tržiště a bazary. 
+Na protějším břehu ve čtvrti zvané Palmyra stály chalupy a chatrče pracujícího lidu a chudiny, domky a krámky drobných obchodníků, 
+dobytčí ohrady a jatka, jakož i různé až po soumraku ožívající podniky a lokály, poněvadž Palmyra byla rovněž čtvrtí zábav a zakázaných požitků. 
+Jak Geralt dobře věděl, bylo zde možno též snadno přijít o měšec nebo dostat nožem mezi žebra.
+'''
+kulhanek = '''
+Byl to největší člověk, jakého jsem kdy viděl – byl dokonce větší než náš pán hrabě Frederick, a nebylo v Dolních Sasích nikoho většího nad našeho pána hraběte Fredericka. 
+Když mu náš nový pán hrabě Heinrich nechal useknout ruce, nohy a nakonec hlavu, byl jsem také větší než náš pán hrabě Frederick, ale to už pak byl kdekdo.
+Ve dveřích se musel hluboko sklonit, a když se narovnal, 
+jeho kápě zmizela ve stínech pod stropem – ještě že je v naší krčmě tak vysoký – otec vždy říká, že ve správné krčmě musí jít tancovat na stole a Černý mlýn je správná krčma
+Oba švédští marodéři přestali prznit mou sestru a vzhléd
+Cizinec měl plášť z tmavozeleného brokátu, kápi hluboko do čela, a nad levým ramenem jílec meče. 
+Plášť byl promočený deštěm a zastříkaný blátem – z lemu padaly hojné špinavé kapky. 
+Divné, podle pláště je bohatý, a přesto jsem v nekonečném bubnování vody nezaslechl kopyta. 
+I podle zabahněných bot přišel pěšky. Přejel pohledem po marodérech a usadil se k vedlejšímu stolu, aby měl zeď za zády a aby viděl na všechny dveře a obě okna.
+Švédové zase začali prznit mou sestru. Už se těším, až vyrostu, abych také mohl prznit svou sestru
+„Co si budete přát, vzácný pane?“ přispěchal otec a otíral si ruce do mastnotou pročernalé zástěry. 
+Má velké silné ruce, a stejně jako já si krom meče všiml i krunýře pod cizincovým pláštěm – a každý, kdo má zbroj a meč, je v naší krčmě vzácný pán.
+„Kuře. Střední. Přines ho, zabij, oškubej – zbytek zvládnu sám.“ Cizinec mluvil sice po našem, ale s takovým přízvukem, že mu bylo sotva rozumět.
+ „A džbán vody.“
+„Máme vynikající víno, vzácný pane, a…
+„Džbán vody,“ hlas zledovatěl a cizinec si shodil mokrou kápi z hlavy – otec až ucukl. 
+Cizinec byl vychrtlý, tváře propadlé únavou, bledé jak smrt, ale v očích mu hořely plameny lojových svíc, jako by hořely samy oči.
+„Jak si přeješ, vzácný pane… zaplatit máš jistě čím?“ Na to by se otec zeptal, i kdyby u stolu seděl sám Lucifer.
+Cizinec odstrčil umáčený vak, sáhl pod plášť a pak to zazvonilo. Marodéři opět přestali prznit mou sestru a opět vzhlédli. 
+I moje sestra vzhlédla. Když zazvoní zlato, vzhlédne každý.
+Je to divné – každý peníz by měl cinknout stejně – měďák, stříbrňák i zlaťák, ale není to tak. Všichni to máme v uchu.
+Otec se uklonil, až se nosem dotkl stolní desky, zvedl obrovskou zářivou minci a řekl: „Cokoli si přeješ, převzácný pane.“ „Nocleh?“
+'''
 
 
 
 
 seznam_uzivatelu = {'bob':'123', 'ann':'pass123', 'mike':'password123', 'liz':'pass123'}
 cara = '-'*45
-cara_ukonceni= '-'*60
+cara_ukonceni = '-'*60
 
 
 pocet_slov = []
 zacina_velkym_pismenem = []
-velka_pismena= []
-mala_pismena =[]
+velka_pismena = []
+mala_pismena = []
 cislice = []
-text_bez_vel_pismen =[]
-mnozstvi_slov= {}
-delka_slov ={}
+text_bez_vel_pismen = []
+mnozstvi_slov = {}
+delka_slov = {}
+delky = []
+delky_porovnani = {}
+
+ 
+def analyza(text):
+    
+    
+    for slovo in text.split():
+        ciste_slovo = slovo.strip(".,:!?")
+        pocet_slov.append(ciste_slovo)
+
+    for slovo in pocet_slov:
+        if slovo.istitle():
+            zacina_velkym_pismenem.append(slovo)
+
+
+    for slovo in pocet_slov:
+        if slovo.isupper():
+            velka_pismena.append(slovo)  
+        elif slovo.islower():
+            mala_pismena.append(slovo)
+
+    for slovo in pocet_slov:
+        if slovo.isdigit():
+            cislice.append(slovo)
+
+
+
+    for slovo in pocet_slov:
+        if slovo not in mnozstvi_slov:
+            mnozstvi_slov[slovo] = 1
+        else:
+            mnozstvi_slov[slovo] = mnozstvi_slov[slovo] + 1
+
+    for slovo in pocet_slov:
+        delky.append(len(slovo))
+        delky.sort()
+        
+    for cislo in delky:
+        if cislo not in delky_porovnani:
+           delky_porovnani[cislo] = 1
+        else:
+            delky_porovnani[cislo] = delky_porovnani[cislo] + 1
+
 
    
-for slovo in krtecek.split():
-    ciste_slovo = slovo.strip(".,:!?")
-    pocet_slov.append(ciste_slovo.lower())
+uzivatel = input("Zadej jmeno uzivatale: ")
+heslo = input("Zadej heslo: ")
 
-for slovo in pocet_slov:
-    if slovo.istitle():
-        zacina_velkym_pismenem.append(slovo)
+while uzivatel in seznam_uzivatelu and seznam_uzivatelu.get(uzivatel) == heslo:
+
+     print(cara, f"Vitej v textovem analyzatoru, {uzivatel}","Mame zde 3 texty na analyzu dle autoru", cara,sep='\n') 
+     break
+          
+else:
+     print(cara_ukonceni,'****Chybne zadany uzivatel nebo heslo, ukoncuji program ****',cara_ukonceni,sep='\n')
+     exit()
 
 
-for slovo in pocet_slov:
-    if slovo.isupper():
-        velka_pismena.append(slovo)  
-    elif slovo.islower():
-        mala_pismena.append(slovo)
+print("Autori na vyber:", "1: Zdenek Miler","2: Andrzej Sapkowski", "3: Jiri Kulhanek",cara, sep='\n' )
+vyber = int(input("Vyber autora pro analyzu jeho knizni ukazky (zadej cislo) : "))
 
-for slovo in pocet_slov:
-    if slovo.isdigit():
-        cislice.append(slovo)
+if vyber == 1:
+    analyza(krtecek)
+    
+elif vyber == 2:
+    analyza(sapkowski)
 
-cislice =list(map(int,cislice))
+else:
+    analyza(kulhanek)
+
+
+
+cislice = list(map(int, cislice))
 soucet = sum(cislice)
 
 
-for slovo in pocet_slov:
-    if slovo not in mnozstvi_slov:
-            mnozstvi_slov[slovo] = 1
-    else:
-        mnozstvi_slov[slovo] = mnozstvi_slov[slovo] +1
-        
-for slovo in pocet_slov:
-    #delka_slov[slovo]=len(slovo)
-    delka_slov 
-    
-    
-    
-        
-# =============================================================================
-# for slovo in pocet_slov:
-#     if len(slovo) not in delka_slov:
-#         delka_slov[slovo] = 1
-#     else:
-#         delka_slov[slovo] = delka_slov[slovo]+1
-# =============================================================================
-        
-
-
-
-print(delka_slov)
-#print(mnozstvi_slov.values())
-#print(pocet_slov)
-
-
-
-
-#print(analyza(krtecek))
-
-# uzivatel = input("Zadej jmeno uzivatale: ")
-# heslo = input("Zadej heslo: ")
-
-
-# while uzivatel in seznam_uzivatelu and seznam_uzivatelu.get(uzivatel) == heslo:
-
-#     print(cara, f"Vitej v textovem analyzatoru, {uzivatel}","Mame zde 3 texty na analyzu dle autoru", cara,sep='\n') 
-#     break
-          
-# else:
-#     print(cara_ukonceni,'****Chybne zadany uzivatel nebo heslo, ukoncuji program ****',cara_ukonceni,sep='\n')
-#     exit()
-
-
-# print("Autori na vyber:", "1: Zdenek Miler","2: Andrzej Sapkowski", "3: Jiri Kulhanek",cara, sep='\n' )
-# vyber = input("Vyber autora pro analyzu jeho knizni ukazky (zadej cislo) : ")
-
-# if vyber == 1:
-#     print(analyza(krtecek))
-# elif vyber == 2:
-#     print(analyza(sapkowski))
-# else:
-#     print(analyza(kulhanek))
-
-# print(f'''{cara}
-# Text obsahuje celkem {len(pocet_slov)} slov.
-# Text obsahuje celkem {len(zacina_velkym_pismenem)} slov zacinajici velkym pismenem.
-# Text obsahuje celkem {len(velka_pismena)} slov psanych velkymi pismeny.
-# Text obsahuje celkem {len(mala_pismena)} slov psanych malymi pismeny.
-# Text obsahuje celkem {len(cislice)} cislic v textu.
-# Soucet vsech cislic v textu je {(soucet)}.
-# {cara}
-# Delka|  Zobrazeni  | Pocet
-# {cara}''')
-# print(f'''
-# 1| {len.
+print(f'''{cara}
+Text obsahuje celkem {len(pocet_slov)} slov.
+Text obsahuje celkem {len(zacina_velkym_pismenem)} slov zacinajici velkym pismenem.
+Text obsahuje celkem {len(velka_pismena)} slov psanych velkymi pismeny.
+Text obsahuje celkem {len(mala_pismena)} slov psanych malymi pismeny.
+Text obsahuje celkem {len(cislice)} cislic v textu.
+Soucet vsech cislic v textu je {(soucet)}.
+{cara}
+Delka|  Zobrazeni  | Pocet
+{cara}''')
+print(f'''
+    1| 
 
