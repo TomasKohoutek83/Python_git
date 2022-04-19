@@ -1,3 +1,4 @@
+import pprint
 
 
 krtecek = '''
@@ -31,11 +32,12 @@ mala_pismena =[]
 cislice = []
 text_bez_vel_pismen =[]
 mnozstvi_slov= {}
+delka_slov ={}
 
    
 for slovo in krtecek.split():
     ciste_slovo = slovo.strip(".,:!?")
-    pocet_slov.append(ciste_slovo)
+    pocet_slov.append(ciste_slovo.lower())
 
 for slovo in pocet_slov:
     if slovo.istitle():
@@ -55,17 +57,34 @@ for slovo in pocet_slov:
 cislice =list(map(int,cislice))
 soucet = sum(cislice)
 
-   
-for slovo in pocet_slov:
-    text_bez_vel_pismen.append(slovo.lower())
 
-for slovo in text_bez_vel_pismen:
+for slovo in pocet_slov:
     if slovo not in mnozstvi_slov:
             mnozstvi_slov[slovo] = 1
     else:
         mnozstvi_slov[slovo] = mnozstvi_slov[slovo] +1
-print(mnozstvi_slov.values())
+        
+for slovo in pocet_slov:
+    #delka_slov[slovo]=len(slovo)
+    delka_slov 
+    
+    
+    
+        
+# =============================================================================
+# for slovo in pocet_slov:
+#     if len(slovo) not in delka_slov:
+#         delka_slov[slovo] = 1
+#     else:
+#         delka_slov[slovo] = delka_slov[slovo]+1
+# =============================================================================
+        
 
+
+
+print(delka_slov)
+#print(mnozstvi_slov.values())
+#print(pocet_slov)
 
 
 
@@ -108,3 +127,4 @@ print(mnozstvi_slov.values())
 # {cara}''')
 # print(f'''
 # 1| {len.
+
