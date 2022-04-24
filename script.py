@@ -1,1 +1,1 @@
-print("zdar")
+print("zdar a nazdar")
