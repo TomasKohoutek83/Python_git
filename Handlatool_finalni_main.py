@@ -31,7 +31,7 @@ import numpy as py
 import os
 
 # Import treti strany 
-from Handlatool_final_QT import Ui_Form
+from Handlatool_finalni_QT import Ui_Form
 
 # Seznamy standartu, nestandartu dle sekvencniho cisla
 standart_1= pd.DataFrame(
