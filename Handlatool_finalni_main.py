@@ -74,7 +74,7 @@ class LoginWindow(qtw.QWidget,Ui_Form):
             
             
 # Funkce spusteni Browseru
-        def otevri(self):                                                           
+        def otevri(self):
             self.open_dialog_box()
         
 # Ulozeni sek.cisla + vypis do lablu. Kontrola spravneho zapisu sek.cisla
